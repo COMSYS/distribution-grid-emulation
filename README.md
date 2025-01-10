@@ -20,17 +20,18 @@ Install rettij from https://gitlab.com/frihsb/rettij
 
 Enter our project directory.
 
-### Generate topology
-
-`<topology.yaml>` and `<topology-ips.txt>` are the output files.
+### Generate a custom topology
 
 ```bash
 python3 topology-generator/generator.py <topology.yaml> <topology-ips.txt>
 ```
 
+`<topology.yaml>` and `<topology-ips.txt>` are the output files.
+
+
 ### Starting rettij
 
-1.  Run the following command, where `<topology.yaml>` is a topology that has been generated with the topology generator. Note that this can take about an hour for large topologies such as the one provided.
+1.  Run the following command, where `<topology.yaml>` is a topology that has been generated with the topology generator. The original topology from our evaluation is provided by topologies/distribution-system-topo.yaml. Note that the setup can take about an hour for large topologies.
 
     ```bash
     rettij -t <topology.yaml> --components custom-components/
