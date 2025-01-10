@@ -1,0 +1,6 @@
+containers:
+  - image: <registry>/simple-uw:latest # specify your registry where you put the docker image
+    name: simple-uw
+    securityContext:
+      privileged: true
+    tty: true
